@@ -9,7 +9,7 @@ st.set_page_config(
 st.write("# Welcome to Streamlit! 👋")
 
 st.markdown(
-    """
+    f"""
     Streamlit is an open-source app framework built specifically for
     Machine Learning and Data Science projects.
     **👈 Select a demo from the sidebar** to see some examples
@@ -23,6 +23,10 @@ st.markdown(
     - Use a neural net to [analyze the Udacity Self-driving Car Image
         Dataset](https://github.com/streamlit/demo-self-driving)
     - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    ### Configuration:
+    - *COGNITO_DOMAIN* = "{authenticate.COGNITO_DOMAIN}"
+    - *CLIENT_ID* = "{authenticate.CLIENT_ID}"
+    - *APP_URI* = "{authenticate.APP_URI}"
 """
 )
 
